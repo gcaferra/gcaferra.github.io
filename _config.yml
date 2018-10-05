@@ -2,8 +2,7 @@ title: [TDD Adventures]
 title_separator          : "-"
 encoding: UTF-8
 name: Giuseppe Caferra
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air"
+theme: jekyll-theme-slate
 
 defaults:
   # _posts
@@ -33,4 +32,3 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
 - jemoji
-theme: jekyll-theme-slate
