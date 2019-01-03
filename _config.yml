@@ -1,7 +1,7 @@
 # Site settings
 title: Another Blog
 url: "https://gcaferra.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-baseurl: "/jekyll-theme-EasyBook" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 #timezone: Asia/Chongqing
 description: >
   One or more sentences introducing this blog.
@@ -9,7 +9,7 @@ description: >
 # Your information
 email: g.caferra@gmail.com
 author: Giuseppe Caferra
-profile: One sentence introducing yourself.
+profile: passionate developer.
 #twitter_username: twitter_username
 github_username:  gcaferra
 profile_links:
