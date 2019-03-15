@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: CV
+permalink: /cv/
 ---
 
-Welcome to this website!
+My CV
 
-> This website is using [laobubu](http://laobubu.net)'s theme: [EasyBook](https://github.com/laobubu/jekyll-theme-EasyBook)
+
