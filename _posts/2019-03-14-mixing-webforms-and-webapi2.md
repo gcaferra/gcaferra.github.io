@@ -51,17 +51,43 @@ Options tried whitout success until now:
  * Setting unique name to the cookie
  * changing the usage of Session
 
-Tht Only workaround found is be sure the session is started before login with a simple call:
+Tht Only workaround found is be sure the session is started before login with a simple call to the session :
 
 ```C#
       Session["WorkaroundForOwinLogin"] = true;
 ```
+then the previous code become like this:
+
+```C#
+    var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+    var claimsIdentity = new ClaimsIdentity(DefaultAuthenticationTypes.ApplicationCookie,
+    ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
+ ... // Adding Claims
+  Session["WorkaroundForOwinLogin"] = true;
+  authenticationManager.SignIn(new AuthenticationProperties {IsPersistent = false}, claimsIdentity);
+
+```
+
 
 and reconfigure the OWIN CookieManager adding this in CookieAuthenticationOptions:
 ```C#
      CookieManager = new SystemWebCookieManager()
 ```
+then the startup file will look like this:
 
-Until now this combination of two line of code seems to work.
+```C#
+ app.UseCookieAuthentication(new CookieAuthenticationOptions
+          {
+            AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
+            CookieName = "myapplication.cookiename",
+            LoginPath = new PathString("/login.aspx"),
+            CookieSecure =  CookieSecureOption.SameAsRequest,
+            ExpireTimeSpan = TimeSpan.FromMinutes(30),
+            SlidingExpiration = true,
+            CookieManager = new SystemWebCookieManager()
+          });
+```
 
-I hate the session but this legacy project rely on that and I cant disable it completely. If possibile disable the session as first option should solve it.
+this combination of two line of code seems to work.
+
+I hate the session but this legacy project rely on that and I cant disable it completely. If possibile disable the session as first option should solve this tedious problem that took me 3 days before I've found a solution.
