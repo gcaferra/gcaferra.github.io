@@ -7,7 +7,7 @@ I wrote this code:
 
 
 > Code from Startup.cs
-```C#
+```csharp
  app.UseCookieAuthentication(new CookieAuthenticationOptions
           {
             AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
@@ -20,7 +20,7 @@ I wrote this code:
 ```
 > Loginpage.aspx
 
-```C#
+```csharp
     var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
     var claimsIdentity = new ClaimsIdentity(DefaultAuthenticationTypes.ApplicationCookie,
     ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
@@ -30,9 +30,9 @@ authenticationManager.SignIn(new AuthenticationProperties {IsPersistent = false}
 
 ```
 > Logout.aspx
-```C#
+```csharp
     var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
-      authenticationManager.SignOut();
+    authenticationManager.SignOut();
     Session.Abandon();
     Response.Redirect("~/");
 ```
@@ -53,19 +53,18 @@ Options tried whitout success until now:
 
 Tht Only workaround found is be sure the session is started before login with a simple call to the session :
 
-```C#
+```csharp
       Session["WorkaroundForOwinLogin"] = true;
 ```
 then the previous code become like this:
 
-```C#
+```csharp
     var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
     var claimsIdentity = new ClaimsIdentity(DefaultAuthenticationTypes.ApplicationCookie,
     ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
- ... // Adding Claims
-  Session["WorkaroundForOwinLogin"] = true;
-  authenticationManager.SignIn(new AuthenticationProperties {IsPersistent = false}, claimsIdentity);
-
+    ... // Adding Claims
+    Session["WorkaroundForOwinLogin"] = true;
+    authenticationManager.SignIn(new AuthenticationProperties {IsPersistent = false}, claimsIdentity);
 ```
 
 
