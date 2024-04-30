@@ -5,7 +5,7 @@ sitemap: false
 permalink: /resume.html
 ---
 
-# This is my working experience
+## This is my working experience
 
 I've started to work as developer in the early 2000 when I started a project with VB 6 and Microsoft Access and a as a self studying passionate developer always trying to improve my knowledge and the products I work on.
 
