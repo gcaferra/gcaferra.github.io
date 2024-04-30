@@ -108,11 +108,11 @@ author:
   avatar           : "/assets/images/profile.png"
   bio              : "Developer"
   location         : "Puglia, Italy"
-  email            : g.caferra@icloud.com
+  email            : g.caferra@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:g.caferra@icloud.com"
+      url: "mailto:g.caferra@gmail.com"
 #    - label: "Website"
 #      icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
