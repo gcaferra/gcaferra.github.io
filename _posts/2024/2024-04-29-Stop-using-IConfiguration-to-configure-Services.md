@@ -8,8 +8,6 @@ tags:
 - best practices
 ---
 
-# Stop using IConfiguration to configure you Services
-
 In several projects I've found using the IConfiguration directly and pass it to services with somethig like this:
 
 ``` csharp
