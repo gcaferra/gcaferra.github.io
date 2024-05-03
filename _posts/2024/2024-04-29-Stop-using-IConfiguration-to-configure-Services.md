@@ -1,5 +1,5 @@
 ---
-title: "Stop using IConfiguration to configure your Services"
+title: "Stop using IConfiguration to Configure your Services"
 tags: 
 - dotnet
 - configuration
@@ -8,15 +8,15 @@ tags:
 - best practices
 ---
 
-In several projects I've found using the IConfiguration directly and pass it to services with somethig like this:
+In several projects I've found using the IConfiguration passed directly around the modules with somethig like:
 
 ``` csharp
 appBuilder.Services.ConfigureMyServices1(configuration);
 ```
 
-This approach is simple but it open to several issues I'll try to show you in the following chapters
+This approach is simple but it is open to several issues I'll try to show you in the following chapters
 
-## A .net Core basic Configuration
+## Dotnet Core Basic Configuration
 
 Dotnet offers a starndardized way to configure the applications by simply writing somethig like:
 
@@ -46,7 +46,7 @@ These are just few examples on how configuration can work in .net core
 
 Please get more information on the configuragion on [Miscrosoft](https://learn.microsoft.com/en-us/dotnet/core/extensions/configuration) web site
 
-## Configuring your Modules (The lazy way)
+## Configuring your Modules (The Lazy Way)
 
 In several projects I've found `IConfiguration` passed directly around the modules with something like
 
@@ -97,7 +97,7 @@ Let me show you why it's a bad practice.
 
 ## Runtime Exceptions
 
-Your `MyFirstService` class become useful for another project and you create a nuget package for it and publish it in you private nuget repository to make it available for other teams.
+Your `MyFirstService` class becomes useful for another project and you create a nuget package for it and publish it in you private nuget repository to make it available for other teams.
 
 After few minutes you published the package the other team start to have runtime NullReferenceExceptions or in the snipped above `InvalidOperationException` and will come back to you to ask why your library is causing that exceptions.
 After a while checking the code you will figure out the problem: There are missing settings in the other's team project.
@@ -119,7 +119,7 @@ But you library is really useful and more teams need it, you need to give them t
 
 ## How to make the configuration clear for everyone?
 
-With the following method for example everyone will be clear in what is needed to configure your service making it clear to everyone how to configure it:
+With the following method, for example, everyone will be clear on what is needed to configure your service making it clear to everyone how to configure it:
 
 ``` csharp
     public static IServiceCollection ConfigureMyServices2(this IServiceCollection services, string myServiceLevelSetting, string externalUrl, string connectionString, string anotherConfig)
@@ -212,7 +212,7 @@ configuration.Bind(myConfiguration); //Match class properties to settings
 appBuilder.Services.ConfigureMyServices(myConfiguration);
 ```
 
-Now the Service implementation need to be updated and receive the MyConfiguration class directly:
+Now the Service implementation needs to be updated and receive the MyConfiguration class directly:
 
 ``` csharp
 public class MyThirdService : IMyFirstService
@@ -241,7 +241,7 @@ Using this approach you will have the same simplicity as the initial statement b
 
 ## Another Improvements: using Options
 
-Of course you can configure some custom validation rules in your class to avoid to have missing or wrong settings but the .net framework provide already a mecchanism for validate the settings using the Data Annotations and you can have them just installing the package `Microsoft.Extensions.Options.DataAnnotations` and decorate your `MyConfiguration` class with annotations like:
+Of course you can configure some custom validation rules in your class to avoid having missing or wrong settings but the .Net Framework provides already a mecchanism to validate the settings using the Data Annotations and you can have them just installing the package `Microsoft.Extensions.Options.DataAnnotations` and decorate your `MyConfiguration` class with annotations like:
 
 ``` csharp
 public class MyConfiguration
@@ -312,7 +312,7 @@ Using this approach you will have strongly typed settings, validation on start u
 
 ## Conclusions
 
-Here, you have some examples of how we can configure services. However, to ensure clarity for everyone, you need to cease propagating `IConfiguration` as the "Configuration Dispatcher." Doing so will alleviate all the problems we have discussed here. Instead, start utilizing strongly typed configuration and ensure that your application won't start if some settings are invalid.
+Here, you have some examples of how we can configure services. However, to ensure clarity for everyone, you need to cease propagating `IConfiguration` as a "Configuration Dispatcher." Doing so will alleviate all the problems we have discussed here. Instead, start utilizing strongly typed configuration and ensure that your application won't start if some settings are invalid.
 
 ### References
 

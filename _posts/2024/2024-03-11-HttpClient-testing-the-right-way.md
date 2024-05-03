@@ -7,9 +7,9 @@ tags:
 - httpclient
 ---
 
-# HttpClient testing: The Right Way
+# HttpClient Testing: The Right Way
 
-For several Years I've managed to test HttpClient using a wrapper class to can control what it return.
+For several years I've managed to test HttpClient using a wrapper class to can control what it return.
 It worked and still my first go to option.
 
 Recently I've developed a small application that just call one endpoint with one method and creating a wrapper was overkill.
@@ -24,15 +24,14 @@ Searching around I've found there are 3 main ways to Test and Mock HttpClient.
 
 ## Some Considerations
 
-Some times having Interfaces for everything or "just for testing it" like what happens with HttpClient is not so good but consider the following:
+Sometimes, having Interfaces for everything, or "just for testing it" like what happens with HttpClient is not so good but consider the following:
 
-**hiding** of source of the informations behind a wrapper like for example IUserService can be helpful and the real implementation of how and there this information rely on the class implementation.
+**hiding** of source of the informations behind a wrapper, like for example `IUserService` can be helpful and the real implementation of how and where this information relies on the class implementation.
 
-For example the method LoginUser should return OK or KO  for the status of the login, the caller should not be aware if there is adatabase or and http server behind it.
-In this case for example my suggestion is wrap the HttpClient inside the **UserServiceImplementation** class and you can test everithing ignoring, from the unit testing perspective what is the source of you information, and maybe it's enough for your application.
+For example the method LoginUser should return "OK" or "KO"  for the status of the login, the caller should not be aware if there is adatabase or and HTTP server behind it.
+In this case for example my suggestion is wrap the HttpClient inside the **UserServiceImplementation** class. You can test everithing ignoring, from the unit testing perspective what is the source of your information, and maybe it's enough for your application.
 
-But sometimes you need to test what is exactly in the headers or in the response headers.
-This was my case in this project, I need to be sure some headers are sent in a specific format and the wrapper will not help me this time, then I've started to search some alternatives.
+But sometimes you need to test what is exactly in the headers or in the response headers where you need to be sure some headers are sent in a specific format and the wrapper will not help me this time, then I've started to search some alternatives.
 
 ## Moq
 
