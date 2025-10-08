@@ -60,7 +60,13 @@ Autonomy, Team Building, Speaking, Coaching, Team Leading
 
 ## Experience
 
-### June 2023 - Present > [Adesso.it](adesso.it)
+
+### January 2025 - Present > [Xtel](https://xtech.ai/)
+A Leading Global Revenue Management Solutions Provider for FMCGs. Drive the
+migration from legacy systems to modern, cloud-native, microservices-based architectures using .NET and Azure mentoring and guide a team of developers, enforcing best practices and fostering a culture of innovation and code quality.
+
+
+### June 2023 - December 2024 > [Adesso.it](https://adesso.it)
 
 An IT consultant company active world wide.Dedicated Software Architect with a proven track record in guiding teams towards efficient software development. Adept at mentoring individuals in unit testing methodologies, rejuvenating legacy codebases, and making strategic architectural decisions.
 
