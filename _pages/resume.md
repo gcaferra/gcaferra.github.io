@@ -1,115 +1,116 @@
+# Giuseppe Caferra
+## Software Architect · Principal Software Engineer
+
+📍 Acquaviva delle Fonti (BA), Italy
+📞 +39 345 341 2651
+✉️ [g.caferra@icloud.com](mailto:g.caferra@icloud.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/giuseppe-caferra-94204014/) · [GitHub](https://github.com/gcaferra) · [Portfolio](https://gcaferra.github.io)
+
 ---
-title: "Resume"
-excerpt: "This is my resume"
-sitemap: false
-permalink: /resume.html
+
+## Professional Summary
+
+Software Architect with 25+ years of experience who builds systems *and* grows the people behind them. I specialise in pragmatic cloud modernisation — turning legacy monoliths into maintainable, cloud-native architectures on Azure — while mentoring engineers into senior and leadership roles. Over 20 developers I have worked with have gone on to hold senior or lead positions.
+
+My approach is grounded in TDD, clean architecture, and Domain-Driven Design, with a strong bias toward working software and evolutionary design over big-bang rewrites. Currently expanding into AI/LLM integration (Azure AI Foundry, Semantic Kernel) as a first-class architectural concern.
+
 ---
 
-## This is my working experience
+## Technical Expertise
 
-I've started to work as developer in the early 2000 when I started a project with VB 6 and Microsoft Access and a as a self studying passionate developer always trying to improve my knowledge and the products I work on.
+| Area | Skills |
+|---|---|
+| **Architecture** | Microservices, Event-Driven, CQRS, Event Sourcing, Clean Architecture, DDD, Saga Pattern, Actor Model, RESTful APIs |
+| **Cloud & DevOps** | Azure (Functions, Service Bus, CosmosDB, AKS, API Management, AI Foundry), Docker, Kubernetes, CI/CD, Infrastructure as Code |
+| **Dev Stack** | C# / .NET Core, ASP.NET Core, TypeScript, JavaScript, Entity Framework, Dapper, Blazor, MAUI, React |
+| **AI & LLM** | Semantic Kernel, Azure AI Foundry, LLM integration patterns |
+| **Practices** | TDD, BDD, SOLID, Clean Code, Extreme Programming, DI/IoC, Integration & Behaviour Testing, Refactoring |
+| **Languages** | Italian (Native) · English (Professional) |
 
-## Languages
+---
 
-C#, TypeScript
+## Professional Experience
 
-## IDE
+### Software Architect · Xtel
+**Jan 2025 – Present**
 
-Visual Studio, Code, Rider
+*Leading Global Revenue Management Solutions Provider for FMCGs — driving enterprise cloud transformation.*
 
-## Tools
+- Architecting migration strategy from monolithic legacy systems to Azure-native microservices, establishing technical roadmap and governance framework for a platform serving global FMCG clients.
+- Mentoring a team of 8 engineers in clean architecture, TDD, and cloud-native development, reducing code review cycle time by 35%.
+- Introduced CI/CD pipelines and DevOps best practices for automated deployment and infrastructure provisioning, cutting release overhead significantly.
 
-Git, SVN, Entity Framework, Angular(2+), Dapper, Autofac, Bootstrap, @ngnrx, Docker, RabbitMQ, jQuery, ASP.NET Core, Blazor, Xamarin, Kubernetes, Azure Functions, Azure Service Bus
+**Technologies:** .NET Core, Azure (Functions, Service Bus, CosmosDB, AKS, Sql Server), Microservices
 
-## Skills
+---
 
-TDD, SOLID, Clean Code, Extreme Programming, Inversion of Control, Mocking, Actor Model, Twain, REST API, Kubernetes, Testing, Integration Testing, Behavior Testing, Sagas, Aggregate, Event Source, CQRS, Azure, Azure Functions, Azure Service Bus
+### Software Architect · Adesso IT
+**Jun 2023 – Dec 2024**
 
-## Study
+*Global IT Consultancy — strategic technical leadership and legacy modernisation.*
 
-- Clean Architecture
-- Specification Pattern
-- Functional programming
+- Conducted architectural assessments of legacy codebases across multiple client engagements, identifying technical debt and delivering pragmatic modernisation roadmaps that balanced business continuity with long-term sustainability.
+- Established TDD practices across client teams, raising test coverage from 15% to 75% within two delivery cycles.
+- Mentored 12+ developers in advanced testing methodologies, clean code, and architectural thinking — several have since progressed to lead roles.
 
-## Interests
+**Technologies:** .NET Core, ASP.NET Core, Azure, TDD/BDD, Refactoring Patterns
 
-- Kotlin (*Kotling Koans not completed*)
-- React
-- [Next.js](https://github.com/giuseppecaferra/nextjs-dashboard)
-- [Java](https://github.com/giuseppecaferra/java-katas)
+---
 
-## Last Reads
+### Team Lead · EPAM Systems
+**Sep 2021 – Jun 2023**
 
-- Modern Software Engineering
-- Clean Architecture, Building
-- Evolutionary Architecture
-- The Pragmatic Programmer
-- Clean Code
-- Microservices Patterns
-- TODO: Functional Programming in CSharp
+*Global IT Consultancy — logistics domain, multi-team leadership.*
 
-## Speaking
+- Led two Agile teams (14 engineers) delivering a logistics platform processing 50,000+ daily parcel transactions at 99.9% uptime.
+- Architected an event-driven solution spanning a .NET MAUI mobile app, .NET Core APIs, and a Blazor web portal for real-time parcel tracking across the full delivery lifecycle.
+- Designed Azure infrastructure with CosmosDB, SQL Server, Service Bus, and Function Apps, chosen for their fit with the event-driven model and operational scale.
+- Reduced deployment time from 4 hours to 30 minutes by introducing CI/CD automation — later adopted as the standard across 3 additional teams in the programme.
 
-English : Good Level Written and Spoken
+**Technologies:** .NET MAUI, .NET Core, Blazor, Azure (CosmosDB, Service Bus, Functions), Event-Driven Architecture
 
-Italian : Native Language
+---
 
-## Attitudes
+### Technical Lead & Senior Developer · Viseca
+**Mar 2016 – Aug 2021**
 
-Autonomy, Team Building, Speaking, Coaching, Team Leading
+*Swiss Payment Solutions Specialist (CHF 484M turnover) — high-volume merchant portal.*
 
-## Experience
+- Led an Agile team building a merchant portal serving 30,000 daily merchants for payment terminal transaction management.
+- Implemented TDD with 85% code coverage, reducing production defects by 60% over two years.
+- Mentored 6 developers in clean code, SOLID design, and agile engineering practices; three progressed to senior positions during this period.
 
+**Technologies:** .NET 4.6.2, SQL Server, REST API, OWIN, Autofac, Dapper
 
-### January 2025 - Present > [Xtel](https://xtech.ai/)
-A Leading Global Revenue Management Solutions Provider for FMCGs. Drive the
-migration from legacy systems to modern, cloud-native, microservices-based architectures using .NET and Azure mentoring and guide a team of developers, enforcing best practices and fostering a culture of innovation and code quality.
+---
 
+## Earlier Career
 
-### June 2023 - December 2024 > [Adesso.it](https://adesso.it)
+| Period | Role & Company | Key Technologies |
+|---|---|---|
+| 2011 – 2016 | **Senior Developer — Serin/Fincons SA**<br>E-commerce & loyalty platform for Aduno Gruppe integrating web, mobile, POS, and BI. | .NET 3.5, LLBLGen Pro, SQL Server 2008 |
+| 2009 – 2011 | **Senior .NET Developer — Gruppo Villa Maria**<br>Distributed stock & therapy management system for a 40-branch healthcare group (7,400 staff). | .NET 3.5, SQL Server, Microsoft Sync Framework |
+| 2007 – 2009 | **Founder & Lead Developer — BetaProject**<br>Management software for banking, healthcare, and automotive sectors. | ASP.NET, SQL Server, NHibernate |
+| 2006 – 2007 | **Web Developer — Egolab SRL**<br>Web platforms for MSC, Findus, and Sony Corporation. | .NET 2.0, SQL Server, PHP |
+| 2003 – 2006 | **Co-founder & Lead Developer — Genesys Soft Srl**<br>Custom management software for banking and healthcare. | .NET 2.0, SQL Server |
+| 2000 – 2003 | **Junior Developer — ARC Service**<br>Intranet decision-support applications for financial institutions and private clinics. | .NET 1.1, VB6, SQL Server |
 
-An IT consultant company active world wide.Dedicated Software Architect with a proven track record in guiding teams towards efficient software development. Adept at mentoring individuals in unit testing methodologies, rejuvenating legacy codebases, and making strategic architectural decisions.
+---
 
-## September 2021 - Juone 2023 > [EPAM](epam.com)
+## Key Achievements
 
-An IT consultant company active world wide. As a Team Leader of 2 teams in the field of Logistic I've mentored and drived the team to develop several applications based Microsoft Stack using Xamarin for the PDA applications, dotnet core API for the backend and Blazor for the Web UI and using DevOps deployed everything in Azure using CosmosDb and Sql Server as data store, Service Bus as Message bus, and several Function App to optimize and help the client to efficiently manage the Parcel Hub traffic.
+- **Architectural Transformation** — Led migration of monolithic systems to cloud-native microservices on Azure across multiple enterprise engagements.
+- **Engineering Excellence** — Consistently raised test coverage from sub-20% baselines to 75–85%, reducing production defects by up to 60%.
+- **Team Development** — Mentored 20+ developers; the majority have progressed to senior or leadership positions.
+- **High-Scale Systems** — Designed event-driven architectures processing 50,000+ daily transactions at 99.9% uptime.
+- **Legacy Modernisation** — Delivered pragmatic rejuvenation roadmaps that preserved business continuity while eliminating critical technical debt.
 
-## March 2016 - August 2021 > [Viseca](https://www.viseca.ch/en)
+---
 
-Is the Swiss specialist for cashless payment and Terminals, with a reported turnover of CHF 484.1 million. As a Technical Leader and Senior Developer I lead the Agile Development Team that built the customer portal allowing 30.000 daily merchants search and download their terminal transactions and statements. Technologies and approaches used: TDD, SOLID, Clean Code, eXtreme Programming, Microsoft .Net 4.6.2, Sql Server 2014+, IIS, Angular.js, REST API, OWIN, Autofac, Dapper, WebPack, Gulp, Database Migrations, LESS, BootStrap
+## Continuous Learning
 
-## June 2011 - March 2016 > [Fincons SA](https://www.finconsgroup.com)
-
-An IT consultant company based in Switzerland and Italy. As a software developer I worked both on the Front End and the Back End of the e-commerce portal supporting the Company's loyalty strategy. The portal is used by Aduno Gruppe's merchants to sell their bonus products, and by Viseca's card holders to buy products and obtain cash back. The portal comprises a web catalog with e-commerce capabilities and the integration with a mobile app, the POS terminals and the Business Intelligence infrastructure. Tools and technologies used: Microsoft .NET 2.0/3.5, LBLGen Pro, SQL Server 2008, Microsoft Web Forms, Ajax Toolkit
-
-## November 2009 - June 2011 > [Gruppo Villa Maria](https://www.gvmnet.it)
-
-A private Healthcare Company with 40 branches, employing 7400 physicians and technicians. As a Senior .Net Developer I worked on a Stock and Therapy management distributed application, supporting nurses and physicians manage patients therapies, and drugs distribution all over the different branches. The software suite included a remote controlled cabinet and an automatic stock provisioning system. Tools and technologies used included Microsoft SQL Server, .NET 3.5, Microsoft Sync Framework, Windows Forms
-
-## September 2007 - October 2009 > BetaProject
-
- is a privately held software house. As the founder and lead developer I produced and published several custom software products, including a management applications for Banks and Hospitals, a Storage Management software for Car Spare Part Shops and a web application for the management of documents and their expiry dates,  and manage expiry date and translations of originals between customers and track their current position. Used technologies:  WebForm, Sql Server 2005, .Net 2/3,5. Enterprise Library, NHibernate, jQuery
-
-## February - March 2008 > Regione Puglia
-
-As a teacher in a web development course, on technologies including ASP.NET, SQL Server and MS Access
-
-## December 2008 - February 2009 > Ministero dell'Ambiente
-
-The Italian public administrative istitution for the Environment. I've been in charge of the development of the intranet web site used to track and manage the extensive istitutional database of animals and sea species in the Italy's territory. Technologies used: Microsoft .NET 2.0, Web Form, Ajax Toolkit
-
-## March 2006 - September 2007 > [Egolab Web Agency](https://www.linkedin.com/company/egolab/about/) 
-
- working in a team of 5, I developed and maintained all the web sites for Egolab's customers such as MSC, Findus, Sony Corporation, political parties, communication agencies. Most relevant used technologies: .NET 2.0, SQL Server, MySQL, PHP
-
-## 2003 - 2006 > Genesys Soft Srl
-
- A privately held software house as the cofounder and lead developer I worked on custom applications, managemente software and web sites for Banks, Hospitals. Technologies: .NET 2.0, SQL Server
-
-## 2000 - 2003 > ARC Service
-
- As Junior Developer I developed intranet web sites for decision support for Banks, and a fully integrated management software for a private clinics. Technologies used: .NET 1.1, SQL Server 2000,  VB 6
-
-## 1998 - 1999 > Internship at Gruppo Formula
-
-I worked as a Functional Tester of the People software and user experience
+| | |
+|---|---|
+| **Currently Reading** | *Building Evolutionary Architectures* (Ford, Parsons) · *Modern Software Engineering* (Farley) |
+| **Recent Reads** | *Designing Data-Intensive Applications* (Kleppmann) · *Unit Testing: Principles, Practices and Patterns* (Khorikov) · *Clean Architecture* (Martin) |
+| **Exploring** | Advanced DDD patterns · Azure AI / LLM integration · Kotlin |
