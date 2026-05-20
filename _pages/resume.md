@@ -1,3 +1,10 @@
+---
+title: "Resume"
+excerpt: "Giuseppe Caferra"
+sitemap: false
+permalink: /resume.html
+---
+
 # Giuseppe Caferra
 ## Software Architect · Principal Software Engineer
 
